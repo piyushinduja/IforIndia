@@ -1,0 +1,161 @@
+:root {
+    --bgcolor: rgb(3, 66, 69);
+    --primarycolor: rgb(232, 254, 255);
+}
+
+body {
+    margin: 0px;
+    /* width: 98%; */
+    background-color: var(--bgcolor);
+    color: var(--primarycolor);
+    font-family: 'Courgette', cursive;
+}
+
+#main {
+    /* border: 2px solid black; */
+    /* width: 98%; */
+    margin: 10px;
+    display: grid;
+    grid-template-areas:
+        "text text map";
+}
+
+#text {
+    grid-area: text;
+}
+
+#name {
+    grid-area: name;
+    font-size: 50px;
+    text-align: center;
+    margin: 10px;
+}
+
+#info {
+    grid-area: info;
+    font-size: 22px;
+    line-height: 2em;
+    text-align: justify;
+    margin: 55px 45px 95px 45px;
+}
+
+#map img {
+    grid-area: map;
+    margin: 8px;
+    height: 450px;
+    width: 350px;
+    border: 5px solid var(--primarycolor);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#extra{
+    /* border: 2px solid black; */
+    width: 98%;
+    margin: 10px;
+}
+#facts h2{
+    text-align: left;
+    margin-left: 40px;
+}
+/* #facts ul{
+    display: flex;
+} */
+#facts ul li{
+    /* flex: 1 1 100%; */
+    line-height: 2em;
+    font-size: large;
+    margin: 10px;
+}
+#places{
+    display: grid;
+    grid-template-areas:
+    "popular popular popular" 
+    "place1 place2 place3";
+}
+.popular{
+    grid-area: popular;
+    margin: 10px;
+    text-align: center;
+}
+
+#places img{
+    height: 275px;
+    width: 98%;
+    /* margin: 10px 75px; */
+    border: 5px solid var(--primarycolor);
+    padding: 5px;
+    border-radius: 10px;
+}
+#places p{
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+#place1{
+    grid-area: place1;
+    margin: 10px 75px;
+    width: 350px;
+}
+#place2{
+    grid-area: place2;
+    margin: 10px 75px;
+    width: 350px;
+}
+#place3{
+    grid-area: place3;
+    margin: 10px 75px;
+    width: 350px;
+}
+#airports{
+    display: grid;
+    grid-template-areas:
+    "popular popular" 
+    "airport railway";
+}
+#airports p{
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+#airports img{
+    height: 275px;
+    width: 98%;
+    border: 5px solid var(--primarycolor);
+    padding: 5px;
+    border-radius: 10px;
+}
+#airport{
+    grid-area: airport;
+    margin: 10px 200px;
+    width: 350px;
+}
+#railway{
+    grid-area: railway;
+    margin: 10px 200px;
+    width: 350px;
+}
+#button{
+    border: 2px solid var(--primarycolor);
+    border-radius: 30px;
+    /* margin-left: 250px ; */
+    height: 40px;
+    width: 700px;
+    margin: 40px 0px 20px 425px;
+    text-align: center;
+    padding-top: 10px;
+    /* padding-bottom: 10px; */
+}
+#button a{
+    text-decoration: none;
+    color: var(--primarycolor);
+    font-size: large;
+    display: block;
+    border-radius: 15px;
+    /* padding: ; */
+}
+#button a:hover{
+    background-color: var(--primarycolor);
+    color: var(--bgcolor);
+    
+}

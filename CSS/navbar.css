@@ -1,0 +1,91 @@
+        /* Navbar CSS */
+        :root {
+            --bgcolor: rgb(3, 66, 69);
+            --primarycolor: rgb(232, 254, 255);
+        }
+
+        header {
+            display: grid;
+            grid-template-areas:
+                "logo logo navbar navbar navbar navbar navbar search search search";
+            border: 3px solid var(--primarycolor);
+            border-radius: 300px;
+            width: 98%;
+            margin: 10px;
+            position: sticky;
+            top: 1px;
+            background-color: var(--primarycolor);
+            color: var(--bgcolor);
+            z-index: 5;
+        }
+
+        #logo {
+            grid-area: logo;
+            margin: auto;
+            
+        }
+        #logo img{
+            height: 55px;
+            width: 145px;
+            margin: 8px 4px 4px 4px ;
+            transition: all 0.25s;
+        }
+        #logo img:hover{
+            height: 58px;
+            width: 148px;
+            margin: 8px 4px 4px 4px ;
+        }
+        #navbar {
+            grid-area: navbar;
+            
+        }
+        #navbar ul{
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            margin-top: 25px;
+        }
+        #navbar li a{
+            text-decoration: none;
+            padding-right: 15px;
+            margin: 10px;
+            color: var(--bgcolor);
+            font-size: large;
+            transition: all 0.25s;
+            /* margin-top: 30px; */
+        }
+        #navbar li a:hover{
+            text-decoration: none;
+            margin: 10px;
+            color: var(--bgcolor);
+            font-size: 20px;
+            text-decoration:underline;
+        }
+
+        #search{
+            grid-area: search;
+            margin: auto;
+        }
+        #search a{
+            text-decoration: none;
+            color: var(--bgcolor);
+            padding-right: 15px;
+            font-size: large;
+            transition: all 0.25s;
+        }
+        #search a:hover{
+            text-decoration: none;
+            margin: 10px;
+            color: var(--bgcolor);
+            font-size: 20px;
+            text-decoration:underline;
+        }
+        #search input{
+            border-radius: 300px;
+            padding: 10px;
+            width: 200px;
+            transition: all 0.5s;
+        }
+        #search input:hover{
+            width: 240px ;
+        }
