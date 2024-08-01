@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goa</title>
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/states.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body onload="loadHome()">
+    <header>
+        <div id="logo">
+            <a href="home.html">
+                <img src="Photos/logo1.jpg" alt="Logo">
+            </a>
+        </div>
+        <div id="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <!-- <li><a href="">Blogs</a></li> -->
+                <li><a href="mydestination.html">My Destinations</a></li>
+                <li><a href="home.html#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="search">
+            <a href="login.html">Log In</a>
+            <!-- <label for="search">Search: </label> -->
+            <!-- <input type="text" name="search" placeholder="Search any destination..."> -->
+        </div>
+    </header>
+    <div id="main">
+        <div id="text">
+            <div id="name">Goa</div>
+            <div id="info">Goa, state of India, comprising a mainland district on the country’s southwestern coast and an offshore island. It is located about 250 miles (400 km) south of Mumbai (Bombay). One of India’s smallest states, it is bounded by the states of Maharashtra on the north and Karnataka on the east and south and by the Arabian Sea on the west. Goa is visited by large numbers of international and domestic tourists each year because of its white-sand beaches, active nightlife, places of worship, and World Heritage-listed architecture. It also has rich flora and fauna because it lies on the Western Ghats range, a biodiversity hotspot. It is the third-highest ranking among Indian states in human development index.</div>
+        </div>
+        <div id="map"><img src="Photos/goa map.jpg" alt="Goa Map"></div>
+    </div>
+    <div id="extra">
+        <div id="facts">
+            <h2 class="popular">Facts: </h2>
+            <ul>
+            <li>Population: 18.2 Lakhs</li>
+            <li>Capital: Panjim</li>
+            <li>Temperature: 20<sup>o</sup>C - 33<sup>o</sup>C</li>
+            <li>State Language: Konkani</li>
+        </ul>
+        </div>
+        <hr style="margin: 20px;">
+        <div id="places">
+            <h2 class="popular">Popular Places To Visit: </h2>
+            <div id="place1">
+                <img src="Photos/goa1.jpg" alt="Immaculate Conception Church">
+                <p>Immaculate Conception Church</p>
+            </div>
+            <div id="place2">
+                <img src="Photos/goa2.jpg" alt="Calangute Beach">
+                <p>Calangute Beach</p>
+            </div>
+            <div id="place3">
+                <img src="Photos/goa3.jpg" alt="Dudhsagar Falls">
+                <p>Dudhsagar Falls</p>
+            </div>
+        </div>
+        <hr style="margin: 20px;">
+        <div id="airports">
+            <h2 class="popular">Frequently Used Airport and Railway Station: </h2>
+            <div id="airport">
+                <img src="Photos/goa airport.jpg" alt="Goa International Airport">
+                <p>Goa International Airport</p>
+            </div>
+            <div id="railway">
+                <img src="Photos/goa railway.jpg" alt="Vasco-Da-Gama">
+                <p>Vasco-Da-Gama</p>
+            </div>
+        </div>
+        <div id="button">
+            <a href="" onclick="addDestination('Goa')">Add to My Destinations</a>
+        </div>
+    </div>
+</body>
+<script src="JavaScript/login.js"></script>
+<script src="JavaScript/mydestinations.js"></script>
+</html>

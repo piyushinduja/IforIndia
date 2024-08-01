@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations</title>
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bgcolor: rgb(3, 66, 69);
+            --primarycolor: rgb(232, 254, 255);
+        }
+
+        body {
+            margin: 0px;    
+            background-color: var(--bgcolor);
+            color: var(--primarycolor);
+            font-family: 'Courgette', cursive;
+        }
+
+        #main {
+            display: flex;
+            /* border: 2px solid black; */
+            margin: 10px;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            /* position: relative; */
+        }
+
+        #main2 {
+            display: flex;
+            /* border: 2px solid black; */
+            margin: 10px;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        #main div {
+            /* border: 2px solid black; */
+            height: 200px;
+            width: 27%;
+            margin: 15px 0px;
+            border: 5px solid var(--primarycolor);
+            border-bottom-left-radius: 30px;
+            border-top-right-radius: 30px;
+            position: relative;
+            transition: all 0.75s;
+        }
+
+        #main div:hover {
+            /* border: 2px solid black; */
+            height: 210px;
+            width: 28%;
+        }
+
+        #main2 div {
+            /* border: 2px solid black; */
+            height: 200px;
+            width: 28%;
+            margin: 15px 0px;
+            border: 5px solid var(--primarycolor);
+            position: relative;
+            transition: all 0.75s;
+            border-bottom-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+
+        #main2 div:hover {
+            /* border: 2px solid black; */
+            height: 210px;
+            width: 29%;
+        }
+
+        #heading1 {
+            /* height: 200px; */
+            width: 98%;
+            margin: 10px;
+            text-align: center;
+        }
+
+        #heading2 {
+            /* height: 200px; */
+            width: 98%;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .placeimg {
+            height: 200px;
+            width: 100%;
+            transition: all 0.75s;
+            border-bottom-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+
+        .placeimg:hover {
+            height: 210px;
+        }
+
+        .placename {
+            height: 75px;
+            width: 150px;
+            margin: auto;
+            color: var(--bgcolor);
+            position: absolute;
+            display: inline-block;
+            top: 60px;
+            left: 15px;
+            background-color: rgb(232, 254, 255, 0.7);
+            font-weight: bolder;
+            border-radius: 50%;
+            font-size: x-large;
+            text-align: center;
+            /* padding: 40px 0px 0px 0px; */
+        }
+    </style>
+</head>
+
+<body onload="loadHome()">
+    <header>
+        <div id="logo">
+            <a href="home.html">
+                <img src="Photos/logo1.jpg" alt="Logo">
+            </a>
+        </div>
+        <div id="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <!-- <li><a href="">Blogs</a></li> -->
+                <li><a href="mydestination.html">My Destinations</a></li>
+                <li><a href="home.html#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="search">
+            <a href="login.html">Log In</a>
+            <!-- <label for="search">Search: </label> -->
+            <input type="search" name="search" id="searchTxt" placeholder="Search any destination...">
+        </div>
+    </header>
+    <div id="heading1">
+        <h1>States</h1>
+    </div>
+    <div id="main">
+        <div id="andhra pradesh">
+            <a href="andhra pradesh.html">
+                <img src="Photos/andhra pradesh cover.jpg" alt="Andhra Pradesh" class="placeimg">
+                <p style="padding: 20px 0px 0px 0px;" class="placename">Andhra Pradesh</p>
+            </a>
+        </div>
+        <div id="arunachal pradesh">
+            <a href="arunachal pradesh.html">
+                <img src="Photos/arunachal pradesh cover.jpg" alt="Arunachal Pradesh" class="placeimg">
+                <p style="padding: 20px 0px 0px 0px;" class="placename">Arunachal Pradesh</p>
+            </a>
+        </div>
+        <div id="assam">
+            <a href="assam.html">
+                <img src="Photos/assam cover.jpg" alt="Assam" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">Assam</p>
+            </a>
+        </div>
+        <div id="bihar">
+            <a href="bihar.html">
+                <img src="Photos/bihar cover.jpg" alt="Bihar" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">Bihar</p>
+            </a>
+        </div>
+        <div id="chhattisgarh">
+            <a href="chhattisgarh.html">
+                <img src="Photos/chhattisgarh cover.jpg" alt="Chhattisgarh" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">Chhattisgarh</p>
+            </a>
+        </div>
+        <div id="goa">
+            <a href="goa.html">
+                <img src="Photos/goa cover.jpg" alt="Goa" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">Goa</p>
+            </a>
+        </div>
+        <div id="gujarat">
+            <a href="gujarat.html">
+                <img src="Photos/gujarat cover.jpg" alt="Gujarat" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">Gujarat</p>
+            </a>
+        </div>
+        <div id="haryana">
+            <a href="haryana.html">
+                <img src="Photos/haryana cover.jpg" alt="Haryana" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">Haryana</p>
+            </a>
+        </div>
+        <div id="himachal pradesh">
+            <a href="himachal pradesh.html">
+                <img src="Photos/himachal pradesh cover.jpg" alt="Himachal Pradesh" class="placeimg">
+                <p style="padding: 20px 0px 0px 0px;" class="placename">Himachal Pradesh</p>
+            </a>
+        </div>
+        <div id="jharkhand">
+            <a href="jharkhand.html">
+                <img src="Photos/jharkhand cover.jpg" alt="Jharkhand" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">Jharkhand</p>
+            </a>
+        </div>
+        <div id="karnataka">
+            <a href="karnataka.html">
+                <img src="Photos/karnataka cover.jpg" alt="Karnataka" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">Karnataka</p>
+            </a>
+        </div>
+        <div id="kerala">
+            <a href="kerala.html">
+                <img src="Photos/kerala cover.jpg" alt="Kerala" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">Kerala</p>
+            </a>
+        </div>
+        <div id="madhya pradesh">
+            <a href="madhya pradesh.html">
+                <img src="Photos/madhya pradesh cover.jpg" alt="Madhya Pradesh" class="placeimg">
+                <p style="padding: 20px 0px 0px 0px;" class="placename">Madhya Pradesh</p>
+            </a>
+        </div>
+        <div id="maharashtra">
+            <a href="maharashtra.html">
+                <img src="Photos/maharashtra cover.jpg" alt="Maharashtra" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">Maharashtra</p>
+            </a>
+        </div>
+        <div id="manipur">
+            <a href="manipur.html">
+                <img src="Photos/manipur cover.jpg" alt="Manipur" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">Manipur</p>
+            </a>
+        </div>
+        <div id="meghalaya">
+            <a href="meghalaya.html">
+                <img src="Photos/meghalaya cover.jpg" alt="Meghalaya" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">Meghalaya</p>
+            </a>
+        </div>
+        <div id="mizoram">
+            <a href="mizoram.html">
+                <img src="Photos/mizoram cover.jpg" alt="Mizoram" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">Mizoram</p>
+            </a>
+        </div>
+        <div id="nagaland">
+            <a href="nagaland.html">
+                <img src="Photos/nagaland cover.jpg" alt="Nagaland" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">Nagaland</p>
+            </a>
+        </div>
+        <div id="odisha">
+            <a href="odisha.html">
+                <img src="Photos/odisha cover.jpg" alt="Odisha" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">Odisha</p>
+            </a>
+        </div>
+        <div id="punjab">
+            <a href="punjab.html">
+                <img src="Photos/punjab cover.jpg" alt="Punjab" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">Punjab</p>
+            </a>
+        </div>
+        <div id="rajasthan">
+            <a href="rajasthan.html">
+                <img src="Photos/rajasthan cover.jpg" alt="Rajasthan" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">Rajasthan</p>
+            </a>
+        </div>
+        <div id="sikkim">
+            <a href="sikkim.html">
+                <img src="Photos/sikkim cover.jpg" alt="Sikkim" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">Sikkim</p>
+            </a>
+        </div>
+        <div id="tamil nadu">
+            <a href="tamil nadu.html">
+                <img src="Photos/tamil nadu cover.jpg" alt="Tamil Nadu" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">Tamil Nadu</p>
+            </a>
+        </div>
+        <div id="telangana">
+            <a href="telangana.html">
+                <img src="Photos/telangana cover.jpg" alt="Telangana" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">Telangana</p>
+            </a>
+        </div>
+        <div id="tripura">
+            <a href="tripura.html">
+                <img src="Photos/tripura cover.jpg" alt="Tripura" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">Tripura</p>
+            </a>
+        </div>
+        <div id="uttar pradesh">
+            <a href="uttar pradesh.html">
+                <img src="Photos/uttar pradesh cover.jpg" alt="Uttar Pradesh" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">Uttar Pradesh</p>
+            </a>
+        </div>
+        <div id="uttarakhand">
+            <a href="uttarakhand.html">
+                <img src="Photos/uttarakhand cover.jpg" alt="Uttarakhand" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">Uttarakhand</p>
+            </a>
+        </div>
+        <div id="west bengal">
+            <a href="west bengal.html">
+                <img src="Photos/west bengal cover.jpg" alt="West Bengal" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">West Bengal</p>
+            </a>
+        </div>
+    </div>
+    <hr style="margin: 20px;">
+    <div id="heading2">
+        <h1>Union Territories</h1>
+    </div>
+    <div id="main2">
+        <div id="andaman and nicobar">
+            <a href="andaman and nicobar.html">
+                <img src="Photos/andaman and nicobar cover.jpg" alt="Andaman and Nicobar" class="placeimg">
+                <p style="padding: 20px 0px 0px 0px; width: 180px;" class="placename">Andaman and Nicobar</p>
+            </a>
+        </div>
+        <div id="chandigarh">
+            <a href="chandigarh.html">
+                <img src="Photos/chandigarh cover.jpg" alt="Chandigarh" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">Chandigarh</p>
+            </a>
+        </div>
+        <div id="daman and diu">
+            <a href="daman and diu.html">
+                <img src="Photos/daman and diu cover.jpg" alt="Daman and Diu" class="placeimg">
+                <p style="padding: 20px 0px 0px 0px;" class="placename">Daman and Diu</p>
+            </a>
+        </div>
+        <div id="delhi">
+            <a href="delhi.html">
+                <img src="Photos/delhi cover.jpg" alt="Delhi" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">Delhi</p>
+            </a>
+        </div>
+        <div id="jammu and kashmir">
+            <a href="jammu and kashmir.html">
+                <img src="Photos/jammu and kashmir cover.jpg" alt="Jammu and Kashmir" class="placeimg">
+                <p style="padding: 20px 0px 0px 0px;" class="placename">Jammu and Kashmir</p>
+            </a>
+        </div>
+        <div id="ladakh">
+            <a href="ladakh.html">
+                <img src="Photos/ladakh cover.jpg" alt="Ladakh" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">Ladakh</p>
+            </a>
+        </div>
+        <div id="lakshadweep">
+            <a href="lakshadweep.html">
+                <img src="Photos/lakshadweep cover.jpg" alt="Lakshadweep" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">Lakshadweep</p>
+            </a>
+        </div>
+        <div id="puducherry">
+            <a href="puducherry.html">
+                <img src="Photos/puducherry cover.jpg" alt="Puducherry" class="placeimg">
+                <p style="padding: 40px 0px 0px 0px;" class="placename">Puducherry</p>
+            </a>
+        </div>
+    </div>
+</body>
+<script src="JavaScript/login.js"></script>
+<script src="JavaScript/search.js"></script>
+</html>

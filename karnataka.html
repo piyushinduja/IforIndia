@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karnataka</title>
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/states.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body onload="loadHome()">
+    <header>
+        <div id="logo">
+            <a href="home.html">
+                <img src="Photos/logo1.jpg" alt="Logo">
+            </a>
+        </div>
+        <div id="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <!-- <li><a href="">Blogs</a></li> -->
+                <li><a href="mydestination.html">My Destinations</a></li>
+                <li><a href="home.html#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="search">
+            <a href="login.html">Log In</a>
+            <!-- <label for="search">Search: </label> -->
+            <!-- <input type="text" name="search" placeholder="Search any destination..."> -->
+        </div>
+    </header>
+    <div id="main">
+        <div id="text">
+            <div id="name">Karnataka</div>
+            <div id="info">Karnataka, formerly (until 1973) Mysore, state of India, located on the western coast of the subcontinent. It is bounded by the states of Goa and Maharashtra to the north, Telangana to the east, Tamil Nadu to the southeast, and Kerala to the south and by the Arabian Sea to the west. The state extends for about 420 miles (675 km) from north to south and for about 300 miles (480 km) from east to west. Its coastline stretches for some 200 miles (320 km). Before the independence of India in 1947, Mysore was a prosperous and progressive but landlocked princely state, with an area of less than 30,000 square miles (78,000 square km), located on the Karnataka Plateau. The transfer of additional territories to the state in 1953 and 1956 united the Kannada-speaking peoples, gave the state an outlet to the sea, and greatly extended its boundaries. The state took its present name, a Kannada word meaning “lofty land,” in 1973.</div>
+        </div>
+        <div id="map"><img src="Photos/karnataka map.jpg" alt="Karnataka Map"></div>
+    </div>
+    <div id="extra">
+        <div id="facts">
+            <h2 class="popular">Facts: </h2>
+            <ul>
+                <li>Population: 6.41 Crores</li>
+                <li>Capital: Bengaluru</li>
+                <li>Temperature: 20<sup>o</sup>C - 45<sup>o</sup>C</li>
+                <li>State Language: Kannada</li>
+            </ul>
+        </div>
+        <hr style="margin: 20px;">
+        <div id="places">
+            <h2 class="popular">Popular Places To Visit: </h2>
+            <div id="place1">
+                <img src="Photos/karnataka1.jpg" alt="Mysore Palace">
+                <p>Mysore Palace</p>
+            </div>
+            <div id="place2">
+                <img src="Photos/karnataka2.jpg" alt="Cubbon Park">
+                <p>Cubbon Park</p>
+            </div>
+            <div id="place3">
+                <img src="Photos/karnataka3.jpg" alt="Chamundeshwari Temple">
+                <p>Chamundeshwari Temple</p>
+            </div>
+        </div>
+        <hr style="margin: 20px;">
+        <div id="airports">
+            <h2 class="popular">Frequently Used Airport and Railway Station: </h2>
+            <div id="airport">
+                <img src="Photos/karnataka airport.jpg" alt="Kempegowda International Airport Bengaluru">
+                <p>Kempegowda International Airport Bengaluru</p>
+            </div>
+            <div id="railway">
+                <img src="Photos/karnataka railway.jpg" alt="Hubli Junction">
+                <p>Hubli Junction</p>
+            </div>
+        </div>
+        <div id="button">
+            <a href="" onclick="addDestination('Karnataka')">Add to My Destinations</a>
+        </div>
+    </div>
+</body>
+<script src="JavaScript/mydestinations.js"></script>
+<script src="JavaScript/login.js"></script>
+</html>

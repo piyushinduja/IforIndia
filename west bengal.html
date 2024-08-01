@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West Bengal</title>
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/states.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body onload="loadHome()">
+    <header>
+        <div id="logo">
+            <a href="home.html">
+                <img src="Photos/logo1.jpg" alt="Logo">
+            </a>
+        </div>
+        <div id="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <!-- <li><a href="">Blogs</a></li> -->
+                <li><a href="mydestination.html">My Destinations</a></li>
+                <li><a href="home.html#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="search">
+            <a href="login.html">Log In</a>
+            <!-- <label for="search">Search: </label> -->
+            <!-- <input type="text" name="search" placehol  der="Search any destination..."> -->
+        </div>
+    </header>
+    <div id="main">
+        <div id="text">
+            <div id="name">West Bengal</div>
+            <div id="info">West Bengal is a state in the eastern region of India along the Bay of Bengal. With over 91
+                million inhabitants, it is the fourth-most populous state and the fourteenth-largest state by area in
+                India. Covering an area of 88,752 km2 (34,267 sq mi), it is also the seventh-most populous country
+                subdivision of the world. Part of the Bengal region of the Indian subcontinent, it borders Bangladesh in
+                the east, and Nepal and Bhutan in the north. It also borders the Indian states of Odisha, Jharkhand,
+                Bihar, Sikkim and Assam. The state capital is Kolkata, the third-largest metropolis, and seventh largest
+                city by population in India. West Bengal includes the Darjeeling Himalayan hill region, the Ganges
+                delta, the Rarh region and the coastal Sundarbans.
+            </div>
+        </div>
+        <div id="map"><img src="Photos/west bengal map.jpg" alt="West Bengal Map"></div>
+    </div>
+    <div id="extra">
+        <div id="facts">
+            <h2 class="popular">Facts: </h2>
+            <ul>
+                <li>Population: 10.19 Crores</li>
+                <li>Capital: Kolkata</li>
+                <li>Temperature: 8<sup>o</sup>C - 45<sup>o</sup>C</li>
+                <li>State Language: Bengali</li>
+            </ul>
+        </div>
+        <hr style="margin: 20px;">
+        <div id="places">
+            <h2 class="popular">Popular Places To Visit: </h2>
+            <div id="place1">
+                <img src="Photos/west bengal1.jpg" alt="Victoria Memorial, Kolkata">
+                <p>Victoria Memorial, Kolkata</p>
+            </div>
+            <div id="place2">
+                <img src="Photos/west bengal2.jpg" alt="Tiger Hill, Darjeeling">
+                <p>Tiger Hill, Darjeeling</p>
+            </div>
+            <div id="place3">
+                <img src="Photos/west bengal3.jpg" alt="Howrah Bridge, Kolkata">
+                <p>Howrah Bridge, Kolkata</p>
+            </div>
+        </div>
+        <hr style="margin: 20px;">
+        <div id="airports">
+            <h2 class="popular">Frequently Used Airport and Railway Station: </h2>
+            <div id="airport">
+                <img src="Photos/west bengal airport.jpg" alt="Netaji Subhash Chandra Airport, Kolkata">
+                <p>Netaji Subhash Chandra Airport, Kolkata</p>
+            </div>
+            <div id="railway">
+                <img src="Photos/west bengal railway.jpg" alt="Sealdah Railway Station, Kolkata">
+                <p>Sealdah Railway Station, Kolkata</p>
+            </div>
+        </div>
+        <div id="button">
+            <a href="" onclick="addDestination('West Bengal')">Add to My Destinations</a>
+        </div>
+    </div>
+</body>
+<script src="JavaScript/login.js"></script>
+<script src="JavaScript/mydestinations.js"></script>
+</html>

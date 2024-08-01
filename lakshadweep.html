@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakshadweep</title>
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/states.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body onload="loadHome()">
+    <header>
+        <div id="logo">
+            <a href="home.html">
+                <img src="Photos/logo1.jpg" alt="Logo">
+            </a>
+        </div>
+        <div id="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <!-- <li><a href="">Blogs</a></li> -->
+                <li><a href="mydestination.html">My Destinations</a></li>
+                <li><a href="home.html#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="search">
+            <a href="login.html">Log In</a>
+            <!-- <label for="search">Search: </label> -->
+            <!-- <input type="text" name="search" placeholder="Search any destination..."> -->
+        </div>
+    </header>
+    <div id="main">
+        <div id="text">
+            <div id="name">Lakshadweep</div>
+            <div id="info">Lakshadweep, formerly (1956–73) Laccadive, Minicoy, and Amindivi Islands, union territory of India. It is a group of some three dozen islands scattered over some 30,000 square miles (78,000 square km) of the Arabian Sea off the southwestern coast of India. The principal islands in the territory are Minicoy and those in the Amindivi group. The easternmost island lies about 185 miles (300 km) from the coast of the state of Kerala. Ten of the islands are inhabited. The administrative centre is Kavaratti. The name Lakshadweep means “Hundred Thousand Islands” in the Malayalam language and also in Sanskrit.</div>
+        </div>
+        <div id="map"><img src="Photos/lakshadweep map.jpg" alt="Lakshadweep Map"></div>
+    </div>
+    <div id="extra">
+        <div id="facts">
+            <h2 class="popular">Facts: </h2>
+            <ul>
+                <li>Population: 65 Thousand</li>
+                <li>Capital: Kavaratti</li>
+                <li>Temperature: 20<sup>o</sup>C - 32<sup>o</sup>C</li>
+                <li>State Language: Malayalam</li>
+            </ul>
+        </div>
+        <hr style="margin: 20px;">
+        <div id="places">
+            <h2 class="popular">Popular Places To Visit: </h2>
+            <div id="place1">
+                <img src="Photos/lakshadweep1.jpg" alt="Agatti Island">
+                <p>Agatti Island</p>
+            </div>
+            <div id="place2">
+                <img src="Photos/lakshadweep2.jpg" alt="Kavaratti">
+                <p>Kavaratti</p>
+            </div>
+            <div id="place3">
+                <img src="Photos/lakshadweep3.jpg" alt="Kalpeni">
+                <p>Kalpeni</p>
+            </div>
+        </div>
+        <hr style="margin: 20px;">
+        <div id="airports">
+            <h2 class="popular">Frequently Used Airport and Ports: </h2>
+            <div id="airport">
+                <img src="Photos/lakshadweep airport.jpg" alt="Agatti Airport">
+                <p>Diu Airport</p>
+            </div>
+            <div id="railway">
+                <img src="Photos/lakshadweep port.jpg" alt="Kavaratti Harbour">
+                <p>Kavaratti Harbour</p>
+            </div>
+        </div>
+        <div id="button">
+            <a href="" onclick="addDestination('Lakshadweep')">Add to My Destinations</a>
+        </div>
+    </div>
+</body>
+<script src="JavaScript/login.js"></script>
+<script src="JavaScript/mydestinations.js"></script>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarat</title>
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/states.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body onload="loadHome()">
+    <header>
+        <div id="logo">
+            <a href="home.html">
+                <img src="Photos/logo1.jpg" alt="Logo">
+            </a>
+        </div>
+        <div id="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <!-- <li><a href="">Blogs</a></li> -->
+                <li><a href="mydestination.html">My Destinations</a></li>
+                <li><a href="home.html#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="search">
+            <a href="login.html">Log In</a>
+            <!-- <label for="search">Search: </label> -->
+            <!-- <input type="text" name="search" placeholder="Search any destination..."> -->
+        </div>
+    </header>
+    <div id="main">
+        <div id="text">
+            <div id="name">Gujarat</div>
+            <div id="info">Gujarat is a state on the western coast of India with a coastline of 1,600 km (990 mi) – most of which lies on the Kathiawar peninsula – and a population of 60.4 million. It is the fifth-largest Indian state by area and the ninth-largest state by population. Gujarat is bordered by Rajasthan to the northeast, Dadra and Nagar Haveli and Daman and Diu to the south, Maharashtra to the southeast, Madhya Pradesh to the east, and the Arabian Sea and the Pakistani province of Sindh to the west. The Gujarati people of India are indigenous to the state, and their language Gujarati, is the state's official language. The economy of Gujarat is the fifth-largest in India.</div>
+        </div>
+        <div id="map"><img src="Photos/gujarat map.jpg" alt="Gujarat Map"></div>
+    </div>
+    <div id="extra">
+        <div id="facts">
+            <h2 class="popular">Facts: </h2>
+            <ul>
+            <li>Population: 6.27 Crores</li>
+            <li>Capital: Gandhinagar</li>
+            <li>Temperature: 12<sup>o</sup>C - 32<sup>o</sup>C</li>
+            <li>State Language: Gujarati</li>
+        </ul>
+        </div>
+        <hr style="margin: 20px;">
+        <div id="places">
+            <h2 class="popular">Popular Places To Visit: </h2>
+            <div id="place1">
+                <img src="Photos/gujarat1.jpg" alt="Statue of Unity">
+                <p>Statue of Unity</p>
+            </div>
+            <div id="place2">
+                <img src="Photos/gujarat2.jpg" alt="Modhera Sun Temple">
+                <p>Modhera Sun Temple</p>
+            </div>
+            <div id="place3">
+                <img src="Photos/gujarat3.jpg" alt="White Desert Of Kutch">
+                <p>White Desert Of Kutch</p>
+            </div>
+        </div>
+        <hr style="margin: 20px;">
+        <div id="airports">
+            <h2 class="popular">Frequently Used Airport and Railway Station: </h2>
+            <div id="airport">
+                <img src="Photos/gujarat airport.jpg" alt="Sardar Vallabhbhai Patel International Airport">
+                <p>Sardar Vallabhbhai Patel International Airport</p>
+            </div>
+            <div id="railway">
+                <img src="Photos/gujarat railway.jpg" alt="Vadodara Junction">
+                <p>Vadodara Junction</p>
+            </div>
+        </div>
+        <div id="button">
+            <a href="" onclick="addDestination('Gujarat')">Add to My Destinations</a>
+        </div>
+    </div>
+</body>
+<script src="JavaScript/login.js"></script>
+<script src="JavaScript/mydestinations.js"></script>
+</html>

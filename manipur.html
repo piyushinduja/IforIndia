@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipur</title>
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/states.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body onload="loadHome()">
+    <header>
+        <div id="logo">
+            <a href="home.html">
+                <img src="Photos/logo1.jpg" alt="Logo">
+            </a>
+        </div>
+        <div id="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <!-- <li><a href="">Blogs</a></li> -->
+                <li><a href="mydestination.html">My Destinations</a></li>
+                <li><a href="home.html#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="search">
+            <a href="login.html">Log In</a>
+            <!-- <label for="search">Search: </label> -->
+            <!-- <input type="text" name="search" placeholder="Search any destination..."> -->
+        </div>
+    </header>
+    <div id="main">
+        <div id="text">
+            <div id="name">Manipur</div>
+            <div id="info">Manipur is a state in northeastern India, with the city of Imphal as its capital. It is
+                bounded by the Indian states of Nagaland to the north, Mizoram to the south and Assam to the west. It
+                also borders two regions of Myanmar, Sagaing Region to the east and Chin State to the south. The state
+                covers an area of 22,327 square kilometres (8,621 sq mi) and has a population of almost 3 million.
+                Manipur has been at the crossroads of Asian economic and cultural exchange for more than 2,500 years. It
+                has long connected the Indian subcontinent and Central Asia to Southeast Asia, China (or East Asia),
+                Siberia (Russia), Micronesia, and Polynesia, enabling migration of people, cultures and religions.
+            </div>
+        </div>
+        <div id="map"><img src="Photos/manipur map.jpg" alt="Manipur Map"></div>
+    </div>
+    <div id="extra">
+        <div id="facts">
+            <h2 class="popular">Facts: </h2>
+            <ul>
+                <li>Population: 31 Lakhs</li>
+                <li>Capital: Imphal</li>
+                <li>Temperature: 0<sup>o</sup>C - 35<sup>o</sup>C</li>
+                <li>State Language: Meitei</li>
+            </ul>
+        </div>
+        <hr style="margin: 20px;">
+        <div id="places">
+            <h2 class="popular">Popular Places To Visit: </h2>
+            <div id="place1">
+                <img src="Photos/manipur1.jpg" alt="Keibul Lamjao National Park, Bishnupur">
+                <p>Keibul Lamjao National Park, Bishnupur</p>
+            </div>
+            <div id="place2">
+                <img src="Photos/manipur2.jpg" alt="Shree Govindaji Temple, Imphal">
+                <p>Shree Govindaji Temple, Imphal</p>
+            </div>
+            <div id="place3">
+                <img src="Photos/manipur3.jpg" alt="Shirui Kashong, Ukhrul">
+                <p>Shirui Kashong, Ukhrul</p>
+            </div>
+        </div>
+        <hr style="margin: 20px;">
+        <div id="airports">
+            <h2 class="popular">Frequently Used Airport and Railway Station: </h2>
+            <div id="airport">
+                <img src="Photos/manipur airport.jpg" alt="Imphal Airport">
+                <p>Imphal Airport</p>
+            </div>
+            <div id="railway">
+                <img src="Photos/manipur railway.jpg" alt="Imphal Railway Station">
+                <p>Imphal Railway Station</p>
+                <p>(Expected to start in 2022)</p>
+            </div>
+        </div>
+        <div id="button">
+            <a href="" onclick="addDestination('Manipur')">Add to My Destinations</a>
+        </div>
+    </div>
+</body>
+<script src="JavaScript/mydestinations.js"></script>
+<script src="JavaScript/login.js"></script>
+</html>

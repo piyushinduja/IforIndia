@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+    <style>    
+    :root {
+            --bgcolor: rgb(3, 66, 69);
+            --primarycolor: rgb(232, 254, 255);
+        }
+    body{
+        background-color: var(--bgcolor);
+        color: var(--primarycolor);
+        /* margin: 0px; */
+        font-family: 'Courgette', cursive;
+        border: 10px solid var(--primarycolor);
+        /* border-bottom: 10px solid var(--primarycolor); */
+        padding-bottom: 40px;
+        margin:0px;
+    }
+
+    img{
+        width: 400px;
+        height: 200px;
+        margin: 60px auto;
+        display: block;
+        padding: 10px;
+        border: 5px solid var(--primarycolor);
+        border-radius: 50%; 
+    }
+
+    h2{
+        margin-left: 600px;
+    }
+    form{
+        margin-left:550px;
+        justify-content: center;
+    }
+
+    form input{
+        /* display: block; */
+        margin: 15px 0px;
+        font-size: medium;
+        padding: 5px;
+        border-radius: 5px;
+        width: 250px;
+        /* text-align: center; */
+
+    }
+    form label{
+        margin: 15px 7px;
+        font-size: x-large;
+        padding: 5px;
+        /* padding-bottom: 200px; */
+        /* text-align: center; */
+    }
+    a{
+        text-decoration: none;
+        background-color: var(--bgcolor);
+        color: var(--primarycolor);
+        margin: 80px 0px 0px 160px;
+        font-size: x-large;
+        padding: 7px;
+        border-radius: 10px;
+        transition: all 0.25s;
+        border: 3px solid var(--primarycolor);
+    }
+    a:hover{
+        color: var(--bgcolor);
+        background-color: var(--primarycolor);
+    }
+    </style>
+</head>
+<body onload="loadLogin()">
+    <div id="main">
+    <img src="Photos/logo1.jpg" alt="">
+    <h2>Login to Proceed Further:   </h2>
+    <form action="">
+        <label for="name">Name:</label>
+        <input style="margin-left: 25px;" id="name" type="text" name="name" placeholder="Enter your Name">
+        <br>
+        <label for="email">Email Id:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your Email">
+        <br>
+        <br>
+        <a href="home.html" onclick="login()">Log In</a>
+    </form>
+    </div>
+</body>
+<script src="JavaScript/login.js"></script>
+</html>

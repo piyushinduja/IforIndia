@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajasthan</title>
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/states.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body onload="loadHome()">
+    <header>
+        <div id="logo">
+            <a href="home.html">
+                <img src="Photos/logo1.jpg" alt="Logo">
+            </a>
+        </div>
+        <div id="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <!-- <li><a href="">Blogs</a></li> -->
+                <li><a href="mydestination.html">My Destinations</a></li>
+                <li><a href="home.html#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="search">
+            <a href="login.html">Log In</a>
+            <!-- <label for="search">Search: </label> -->
+            <!-- <input type="text" name="search" placeholder="Search any destination..."> -->
+        </div>
+    </header>
+    <div id="main">
+        <div id="text">
+            <div id="name">Rajasthan</div>
+            <div id="info">Rajasthan is a state in northern India. The state covers an area of 342,239 square kilometres
+                (132,139 sq mi) or 10.4 percent of the total geographical area of India. It is the largest Indian state
+                by area and the seventh largest by population. Rajasthan is located on the northwestern side of India,
+                where it comprises most of the wide and inhospitable Thar Desert (also known as the "Great Indian
+                Desert") and shares a border with the Pakistani provinces of Punjab to the northwest and Sindh to the
+                west, along the Sutlej-Indus river valley. It is bordered by five other Indian states: Punjab to the
+                north; Haryana and Uttar Pradesh to the northeast; Madhya Pradesh to the southeast; and Gujarat to the
+                southwest.
+            </div>
+        </div>
+        <div id="map"><img src="Photos/rajasthan map.jpg" alt="Rajasthan Map"></div>
+    </div>
+    <div id="extra">
+        <div id="facts">
+            <h2 class="popular">Facts: </h2>
+            <ul>
+                <li>Population: 8.07 Crores</li>
+                <li>Capital: Jaipur</li>
+                <li>Temperature: 4<sup>o</sup>C - 46<sup>o</sup>C</li>
+                <li>State Language: Rajasthani</li>
+            </ul>
+        </div>
+        <hr style="margin: 20px;">
+        <div id="places">
+            <h2 class="popular">Popular Places To Visit: </h2>
+            <div id="place1">
+                <img src="Photos/rajasthan1.jpg" alt="Ranthambore National Park, Sawai Madhopur">
+                <p>Ranthambore National Park, Sawai Madhopur</p>
+            </div>
+            <div id="place2">
+                <img src="Photos/rajasthan2.jpg" alt="Jal Mahal, Jaipur">
+                <p>Jal Mahal, Jaipur</p>
+            </div>
+            <div id="place3">
+                <img src="Photos/rajasthan3.jpg" alt="Lake Pichola, Udaipur">
+                <p>Lake Pichola, Udaipur</p>
+            </div>
+        </div>
+        <hr style="margin: 20px;">
+        <div id="airports">
+            <h2 class="popular">Frequently Used Airport and Railway Station: </h2>
+            <div id="airport">
+                <img src="Photos/rajasthan airport.jpg" alt="Jaipur International Airport">
+                <p>Jaipur International Airport</p>
+            </div>
+            <div id="railway">
+                <img src="Photos/rajasthan railway.jpg" alt="Jaipur Junction">
+                <p>Jaipur Junction</p>
+            </div>
+        </div>
+        <div id="button">
+            <a href="" onclick="addDestination('Rajasthan')">Add to My Destinations</a>
+        </div>
+    </div>
+</body>
+<script src="JavaScript/mydestinations.js"></script>
+<script src="JavaScript/login.js"></script>
+</html>

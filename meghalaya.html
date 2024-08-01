@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meghalaya</title>
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/states.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body onload="loadHome()">
+    <header>
+        <div id="logo">
+            <a href="home.html">
+                <img src="Photos/logo1.jpg" alt="Logo">
+            </a>
+        </div>
+        <div id="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <!-- <li><a href="">Blogs</a></li> -->
+                <li><a href="mydestination.html">My Destinations</a></li>
+                <li><a href="home.html#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="search">
+            <a href="login.html">Log In</a>
+            <!-- <label for="search">Search: </label> -->
+            <!-- <input type="text" name="search" placeholder="Search any destination..."> -->
+        </div>
+    </header>
+    <div id="main">
+        <div id="text">
+            <div id="name">Meghalaya</div>
+            <div id="info">Meghalaya is a state in Northeast India. Meghalaya was formed by carving out two districts
+                from the state of Assam: the United Khasi Hills and Jaintia Hills, and the Garo Hills on 21 January
+                1972. The population of Meghalaya as of 2016 is estimated to be 3,211,474. Meghalaya covers an area of
+                approximately 22,430 square kilometres, with a length-to-breadth ratio of about 3:1. The state is bound
+                to the south by the Bangladeshi divisions of Mymensingh and Sylhet, to the west by the Bangladeshi
+                division of Rangpur, and to the north and east by India's State of Assam. The capital of Meghalaya is
+                Shillong. During the British rule of India, the British imperial authorities nicknamed it the "Scotland
+                of the East".
+            </div>
+        </div>
+        <div id="map"><img src="Photos/meghalaya map.jpg" alt="Meghalaya Map"></div>
+    </div>
+    <div id="extra">
+        <div id="facts">
+            <h2 class="popular">Facts: </h2>
+            <ul>
+                <li>Population: 38.65 Lakhs</li>
+                <li>Capital: Shillong</li>
+                <li>Temperature: 2<sup>o</sup>C - 36<sup>o</sup>C</li>
+                <li>State Language: English</li>
+            </ul>
+        </div>
+        <hr style="margin: 20px;">
+        <div id="places">
+            <h2 class="popular">Popular Places To Visit: </h2>
+            <div id="place1">
+                <img src="Photos/meghalaya1.jpg" alt="NohKaLikai Falls, Cherrapunji">
+                <p>NohKaLikai Falls, Cherrapunji</p>
+            </div>
+            <div id="place2">
+                <img src="Photos/meghalaya2.jpg" alt="Umiam Lake, Shillong">
+                <p>Umiam Lake, Shillong</p>
+            </div>
+            <div id="place3">
+                <img src="Photos/meghalaya3.jpg" alt="Balpakram National Park, Baghmara">
+                <p>Balpakram National Park, Baghmara</p>
+            </div>
+        </div>
+        <hr style="margin: 20px;">
+        <div id="airports">
+            <h2 class="popular">Frequently Used Airport and Railway Station: </h2>
+            <div id="airport">
+                <img src="Photos/meghalaya airport.jpg" alt="Shillong Airport">
+                <p>Shillong Airport</p>
+            </div>
+            <div id="railway">
+                <img src="Photos/meghalaya railway.jpg" alt="Mendipathar Railway Station">
+                <p>Mendipathar Railway Station</p>
+            </div>
+        </div>
+        <div id="button">
+            <a href="" onclick="addDestination('Meghalaya')">Add to My Destinations</a>
+        </div>
+    </div>
+</body>
+<script src="JavaScript/mydestinations.js"></script>
+<script src="JavaScript/login.js"></script>
+</html>

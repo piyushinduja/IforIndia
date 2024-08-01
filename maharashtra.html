@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maharshtra</title>
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/states.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body onload="loadHome()">
+    <header>
+        <div id="logo">
+            <a href="home.html">
+                <img src="Photos/logo1.jpg" alt="Logo">
+            </a>
+        </div>
+        <div id="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <!-- <li><a href="">Blogs</a></li> -->
+                <li><a href="mydestination.html">My Destinations</a></li>
+                <li><a href="home.html#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="search">
+            <a href="login.html">Log In</a>
+            <!-- <label for="search">Search: </label> -->
+            <!-- <input type="text" name="search" placeholder="Search any destination..."> -->
+        </div>
+    </header>
+    <div id="main">
+        <div id="text">
+            <div id="name">Maharshtra</div>
+            <div id="info">Maharashtra, state of India, occupying a substantial portion of the Deccan plateau in the western peninsular part of the subcontinent. Its shape roughly resembles a triangle, with the 450-mile (725-km) western coastline forming the base and its interior narrowing to a blunt apex some 500 miles (800 km) to the east. Maharashtra is bounded by the Indian states of Gujarat to the northwest, Madhya Pradesh to the north, Chhattisgarh to the east, Telangana to the southeast, Karnataka to the south, and Goa to the southwest and by the union territory of Dadra and Nagar Haveli and the Arabian Sea to the west. Aptly called the gateway of India, Maharashtra is one of India’s biggest commercial and industrial centres, and it has played a significant role in the country’s social and political life.</div>
+        </div>
+        <div id="map"><img src="Photos/maharashtra map.jpg" alt="Maharshtra Map"></div>
+    </div>
+    <div id="extra">
+        <div id="facts">
+            <h2 class="popular">Facts: </h2>
+            <ul>
+                <li>Population: 11.42 Crores</li>
+                <li>Capital: Mumbai</li>
+                <li>Temperature: 17<sup>o</sup>C - 40<sup>o</sup>C</li>
+                <li>State Language: Marathi</li>
+            </ul>
+        </div>
+        <hr style="margin: 20px;">
+        <div id="places">
+            <h2 class="popular">Popular Places To Visit: </h2>
+            <div id="place1">
+                <img src="Photos/maharashtra1.jpg" alt="Mahabaleshwar">
+                <p>Mahabaleshwar</p>
+            </div>
+            <div id="place2">
+                <img src="Photos/maharashtra2.jpg" alt="Gateway Of India">
+                <p>Gateway Of India</p>
+            </div>
+            <div id="place3">
+                <img src="Photos/maharashtra3.jpg" alt="Alibaug">
+                <p>Alibaug</p>
+            </div>
+        </div>
+        <hr style="margin: 20px;">
+        <div id="airports">
+            <h2 class="popular">Frequently Used Airport and Railway Station: </h2>
+            <div id="airport">
+                <img src="Photos/maharashtra airport.jpg" alt="Chhatrapati Shivaji Maharaj International Airport">
+                <p>Chhatrapati Shivaji Maharaj International Airport</p>
+            </div>
+            <div id="railway">
+                <img src="Photos/maharashtra railway.jpg" alt="Chhatrapati Shivaji Maharaj Terminus">
+                <p>Chhatrapati Shivaji Maharaj Terminus</p>
+            </div>
+        </div>
+        <div id="button">
+            <a href="" onclick="addDestination('Maharashtra')">Add to My Destinations</a>
+        </div>
+    </div>
+</body>
+<script src="JavaScript/mydestinations.js"></script>
+<script src="JavaScript/login.js"></script>
+</html>

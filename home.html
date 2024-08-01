@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bgcolor: rgb(3, 66, 69);
+            --primarycolor: rgb(232, 254, 255);
+        }
+
+        body {
+            margin: 0px;
+            background-color: var(--bgcolor);
+            color: var(--primarycolor);
+            font-family: 'Courgette', cursive;
+        }
+
+        #india {
+            /* border: 2px solid black; */
+            height: 500px;
+            margin: 10px;
+            width: 98%;
+            display: grid;
+            grid-template-areas:
+                "indiatext indiatext indiaimg indiaimg";
+        }
+
+        #indiatext {
+            grid-area: indiatext;
+            line-height: 2em;
+            font-size: large;
+            text-align: center;
+            margin: auto;
+            padding: 20px;
+        }
+
+        #indiaimg {
+            grid-area: indiaimg;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            padding: 5px 5px 2px 5px;
+            border: 5px solid var(--primarycolor);
+            border-radius: 10px;
+        }
+
+        #trending {
+            /* border: 2px solid black; */
+            height: 500px;
+            margin: 10px;
+            /* width: 98%; */
+            display: grid;
+            position: relative;
+            grid-template-areas:
+                "trendingtext trendingtext trendingtext"
+                "punjab goa himachal";
+        }
+
+        .trendingtext {
+            grid-area: trendingtext;
+            text-align: center;
+        }
+
+        .trendingimg {
+            width: 420px;
+            height: 400px;
+            margin: auto auto auto 27px;
+            border: 5px solid var(--primarycolor);
+            padding: 5px;
+            border-radius: 10px;
+            transition: all 0.75s;
+        }
+
+        .trendingimg:hover {
+            width: 430px;
+            height: 410px;
+            /* cursor: pointer; */
+        }
+
+        .trendingname {
+            position: absolute;
+            /* left: 170px; */
+            top: 220px;
+            background-color: rgb(250, 235, 215, 0.5);
+            padding: 20px;
+            width: 120px;
+            height: 120px;
+            font-size: xx-large;
+            border-radius: 50%;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .trendingname a {
+            text-decoration: none;
+            display: block;
+            color: var(--primarycolor);
+            text-align: center;
+            padding: 40px 0px;
+        }
+
+        /* .trendingname a:hover{
+            width:130px ;
+            height: 130px;
+            cursor: pointer;
+        } */
+
+        #punjab {
+            grid-area: punjab;
+            height: 400px;
+            width: 95%;
+            margin: auto;
+            /* border: 2px solid black; */
+        }
+
+        #goa {
+            grid-area: goa;
+            height: 400px;
+            width: 95%;
+            margin: auto;
+            /* border: 2px solid black; */
+        }
+
+        #himachal {
+            grid-area: himachal;
+            height: 400px;
+            width: 95%;
+            margin: auto;
+            /* border: 2px solid black; */
+        }
+
+        #experiences {
+            /* border: 2px solid black; */
+            height: 600px;
+            margin: 10px;
+            /* width: 98%; */
+            display: grid;
+            grid-template-areas:
+                "exptext exptext exptext"
+                "biking gliding rafting"
+                "sailing airballoon skiing";
+        }
+
+        #exptext {
+            grid-area: exptext;
+            text-align: center;
+            margin: auto auto 30px auto;
+            /* border: 2px solid black; */
+        }
+
+        #biking {
+            grid-area: biking;
+            height: 250px;
+            width: 350px;
+            margin: auto auto 50px auto;
+            border: 5px solid var(--primarycolor);
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            /* border: 2px solid black; */
+        }
+
+        #gliding {
+            grid-area: gliding;
+            height: 250px;
+            width: 350px;
+            margin: auto auto 50px auto;
+            border: 5px solid var(--primarycolor);
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            /* border: 2px solid black; */
+        }
+
+        #rafting {
+            grid-area: rafting;
+            height: 250px;
+            width: 350px;
+            margin: auto auto 50px auto;
+            border: 5px solid var(--primarycolor);
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            /* border: 2px solid black; */
+        }
+
+        #sailing {
+            grid-area: sailing;
+            height: 250px;
+            width: 350px;
+            margin: auto auto 50px auto;
+            border: 5px solid var(--primarycolor);
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            /* border: 2px solid black; */
+        }
+
+        #airballoon {
+            grid-area: airballoon;
+            height: 250px;
+            width: 350px;
+            margin: auto auto 50px auto;
+            border: 5px solid var(--primarycolor);
+            /* border-radius: 10px; */
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            /* border: 2px solid black; */
+        }
+
+        #skiing {
+            grid-area: skiing;
+            height: 250px;
+            width: 350px;
+            margin: auto auto 50px auto;
+            border: 5px solid var(--primarycolor);
+            /* border-radius: 10px; */
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            /* border: 2px solid black; */
+        }
+
+        .expimg {
+            height: 200px;
+            width: 100%;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+        .expname {
+            height: 50px;
+            text-align: center;
+        }
+
+        #contact {
+            /* border: 2px solid black; */
+            height: 400px;
+            margin: 10px;
+            width: 98%;
+            display: grid;
+            grid-template-areas:
+                "contacthead contacthead"
+                "owner1 owner2";
+        }
+
+        #contacthead {
+            grid-area: contacthead;
+            text-align: center;
+            margin: auto auto 30px auto;
+        }
+
+        #owner1 {
+            grid-area: owner1;
+            margin: auto;
+            border: 5px solid var(--primarycolor);
+            border-radius: 10px;
+        }
+
+        #owner2 {
+            grid-area: owner2;
+            margin: auto;
+            border: 5px solid var(--primarycolor);
+            border-radius: 10px;
+        }
+
+        .contactimg {
+            height: 200px;
+            width: 200px;
+            padding: 15px 25px;
+        }
+
+        .continfo {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body onload="loadHome()">
+    <header>
+        <div id="logo">
+            <a href="home.html">
+                <img src="Photos/logo1.jpg" alt="Logo">
+            </a>
+        </div>
+        <div id="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <!-- <li><a href="">Blogs</a></li> -->
+                <li><a href="mydestination.html">My Destinations</a></li>
+                <li><a href="home.html#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="search">
+            <a href="login.html" id="login">Log In</a>
+            <!-- <label for="search">Search: </label> -->
+            <!-- <input type="search" name="search" id="search" placeholder="Search any destination..."> -->
+        </div>
+    </header>
+    <div id="india">
+        <div id="indiatext">
+            <h1>India</h1>
+            One of the oldest civilisations in the world, India is a mosaic of multicultural experiences. With a rich
+            heritage and myriad attractions, the country is among the most popular tourist destinations in the world. It
+            covers an area of 32, 87,263 sq. km, extending from the snow-covered Himalayan heights to the tropical rain
+            forests of the south. As the 7th largest country in the world, India stands apart from the rest of Asia,
+            marked off as it is by mountains and the sea, which give the country a distinct geographical entity. Fringed
+            by the Great Himalayas in the north, it stretches southwards and at the Tropic of Cancer, tapers off into
+            the Indian Ocean between the Bay of Bengal on the east and the Arabian Sea on the west. As you travel the
+            expanse of the country, you are greeted by diverse nuances of cuisines, faiths, arts, crafts, music, nature,
+            lands, tribes, history and adventure sports. India has a mesmeric conflation of the old and the new. As the
+            bustling old bazaars rub shoulders with swanky shopping malls, and majestic monuments accompany luxurious
+            heritage hotels, the quintessential traveller can get the best of both worlds. Head to the mountains, enjoy
+            a beach retreat or cruise through the golden Thar, India has options galore for all.
+        </div>
+        <div id="indiaimg">
+            <img src="Photos/india map.jpg" alt="India Map">
+        </div>
+    </div>
+    <hr style="margin: 50px 20px 30px 20px;">
+    <div id="trending">
+        <div class="trendingtext">
+            <h1>Trending Places</h1>
+        </div>
+        <div id="punjab">
+            <span style="left: 170px;" class="trendingname">
+                <a href="punjab.html">
+                    Punjab</span>
+            <img class="trendingimg" src="Photos/punjab home.jpg" alt="Punjab">
+            </a>
+        </div>
+
+        <div id="goa">
+            <span style="left: 670px;" class="trendingname">
+                <a href="goa.html">Goa</span>
+            <img class="trendingimg" src="Photos/goa home.jpg" alt="Goa">
+            </a>
+        </div>
+
+        <div id="himachal">
+            <span style="left: 1170px;" class="trendingname">
+                <a href="himachal pradesh.html" style="padding: 25px 0px 0px 0px;">Himachal Pradesh</span>
+            <img class="trendingimg" src="Photos/himachal home.jpg" alt="Himachal Pradesh">
+            </a>
+        </div>
+    </div>
+    <hr style="margin: 50px 20px 30px 20px;">
+    <div id="experiences">
+        <div id="exptext">
+            <h1>Experiences</h1>
+        </div>
+        <div id="biking">
+            <img src="Photos/biking.jpg" alt="Mountain Biking" class="expimg">
+            <p class="expname">Mountain Biking, Himachal Pradesh</p>
+        </div>
+        <div id="gliding">
+            <img src="Photos/gliding.jpg" alt="Paragliding" class="expimg">
+            <p class="expname">Paragliding, Maharashtra</p>
+        </div>
+        <div id="rafting">
+            <img src="Photos/rafting.jpg" alt="River Rafting" class="expimg">
+            <p class="expname">River Rafting, Uttarakhand</p>
+        </div>
+        <div id="sailing">
+            <img src="Photos/sailing.jpg" alt="Parasailing" class="expimg">
+            <p class="expname">Parasailing, Goa</p>
+        </div>
+        <div id="airballoon">
+            <img src="Photos/airballoon.jpg" alt="Hot Air Balloon" class="expimg">
+            <p class="expname">Hot Air Balloon, Rajasthan</p>
+        </div>
+        <div id="skiing">
+            <img src="Photos/skiing.jpg" alt="Skiing" class="expimg">
+            <p class="expname">Skiing, Jammu and Kashmir</p>
+        </div>
+    </div>
+    <hr style="margin: 130px 20px 30px 20px;">
+    <div id="contact">
+        <div id="contacthead">
+            <h1>Contact Us</h1>
+        </div>
+        <div id="owner1">
+            <img src="Photos/owner1.jpg" alt="Harsh Modi" class="contactimg">
+            <p class="continfo"><strong>Harsh Modi</strong></p>
+            <p class="continfo">Mobile No. - 9321009900</p>
+            <p class="continfo">Mail - harshdmodi@gmail.com</p>
+            <p class="continfo">Instagram - harsh_modi15</p>
+        </div>
+        <div id="owner2">
+            <img src="Photos/owner2.jpg" alt="Piyush Hinduja" class="contactimg">
+            <p class="continfo"><strong>Piyush Hinduja</strong></p>
+            <p class="continfo">Mobile No. - 9082253040</p>
+            <p class="continfo">Mail - piyushinduja47@gmail.com</p>
+            <p class="continfo">Instagram - piyushinduja</p>
+        </div>
+    </div>
+</body>
+<script src="JavaScript/login.js"></script>
+</html>
